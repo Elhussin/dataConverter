@@ -1,0 +1,87 @@
+/* General Style for the Window */
+QWidget {
+    background-color: #4d4b4b;  /* Light gray background for the entire window */
+    font-family: 'Arial', sans-serif;  /* Set font family */
+    font-size: 12pt;  /* Set font size for readability */
+    margin: auto;
+}
+
+/* Style for Labels (Text) */
+QLabel {
+    font-size: 12pt;  /* Larger font size for labels */
+    color: white;  /* Dark gray color for text */
+    padding: 10px;  /* Add padding around the text */
+    text-align: center; 
+    background-color: rgba(2, 153, 103, 0.411); /* Center-align the text */
+    border-radius: 5px;
+    max-width: 300px;
+    max-height: 40px;
+    text-align: center;
+}
+
+
+
+/* Style for Buttons */
+QPushButton {
+    background-color:  rgb(9, 139, 199);   /* Green background for buttons */
+    color: white;  /* White text on buttons */
+    border: 1px solid wheat;  /* Remove default border */
+    border-radius: 5px;  /* Rounded corners for the buttons */
+    padding: 12px 25px;  /* Adequate padding inside buttons */
+    font-size: 14pt;  /* Larger font size for buttons */
+}
+
+/* Hover effect for Buttons */
+QPushButton:hover {
+    background-color:rgb(1, 99, 145); /*  green when the button is hovered over */
+    border: solid 2px red ;
+}
+
+/* Style for Layouts (QVBoxLayout, QHBoxLayout) */
+QVBoxLayout, QHBoxLayout {
+    spacing: 10px;  /* Add spacing between items in the layout */
+    margin: 10px;  /* Add margin around the layout */
+}
+
+/* Style for the main window (QMainWindow or QWidget) */
+QMainWindow {
+    background-color: #f4f4f4;  /* Keep the window's background light gray */
+}
+
+/* Result display label (for errors or results) */
+QLabel#result_display {
+
+    font-size: 12pt;
+    font-weight: bold;
+    color: #e74c3c;  /* Red color for error or result text */
+    padding: 10px;
+    text-align: center;
+    width: 500px;
+    padding: 10px 20px;
+    background-color: rgb(226, 231, 230);
+}
+
+
+
+
+/* Add space between the button layout and other elements */
+QHBoxLayout {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Specific styling for date input field and the result display */
+
+/* Style for Input Fields (QLineEdit) */
+QLineEdit {
+    background-color: #ffffff;  /* White background for text input */
+    border: 1px solid #cccccc;  /* Light gray border for the input box */
+    border-radius: 5px;  /* Rounded corners for the input field */
+    padding: 10px;  /* Add some padding inside the input box */
+    font-size: 12pt;  /* Same font size as general text */
+    color: #333333;
+}
+
+QLineEdit:focus{
+    border: 1px solid #8ad6fa;  /* Light gray border for the input box */
+}
